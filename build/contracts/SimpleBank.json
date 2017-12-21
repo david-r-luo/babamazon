@@ -1,0 +1,177 @@
+{
+  "contract_name": "SimpleBank",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "withdrawAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "enroll",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": false,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "accountAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogDepositMade",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60018054600160a060020a03191633600160a060020a03161790555b5b6101fc8061003c6000396000f3006060604052361561006a5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632e1a7d4d811461007d5780638da5cb5b146100a5578063b69ef8a8146100d4578063b6b55f25146100f9578063ba83d1a014610121575b341561007557600080fd5b5b600080fd5b005b341561008857600080fd5b610093600435610152565b60405190815260200160405180910390f35b34156100b057600080fd5b6100b8610159565b604051600160a060020a03909116815260200160405180910390f35b34156100df57600080fd5b610093610168565b60405190815260200160405180910390f35b341561010457600080fd5b610093600435610185565b60405190815260200160405180910390f35b341561012c57600080fd5b610093600160a060020a03600435166101ab565b60405190815260200160405180910390f35b805b919050565b600154600160a060020a031681565b600160a060020a0333166000908152602081905260409020545b90565b600160a060020a033316600090815260208190526040902080548201908190555b919050565b600160a060020a03811660009081526020819052604090206103e8908190555b9190505600a165627a7a723058207cd59a1de7c128b90f3b8ab1c14e65255363fbdbde7d844d23834ef3f7f382200029",
+  "networks": {
+    "1504036378571": {
+      "events": {
+        "0xa8126f7572bb1fdeae5b5aa9ec126438b91f658a07873f009d041ae690f3a193": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogDepositMade",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x74230aceffb9e792716231eede57d1773648b297",
+      "updated_at": 1504038876869
+    },
+    "1505669111761": {
+      "events": {
+        "0x8038576435f0e365f39497b3c0a20a6003fb1faf839da4fe2ee2372fc684b2d6": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "LogDepositMade",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x18985b0c844698557b4fb4c3ffcef6d138638694",
+      "updated_at": 1505673258483
+    },
+    "1506406659549": {
+      "events": {
+        "0xa8126f7572bb1fdeae5b5aa9ec126438b91f658a07873f009d041ae690f3a193": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogDepositMade",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xccccd647a34201e7609bff58d9d3175862317c66",
+      "updated_at": 1506408888723
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1506408888723
+}
